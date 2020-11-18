@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-buttons>
+          <ion-back-button color="blue"></ion-back-button>
+        </ion-buttons>
+      </ion-col>
+
+
+        <ion-text class="ion-text-center titleT" color="blue">
+          Categorias
+        </ion-text>
+        
+
+    </ion-row>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-header color="yellow">
+
+      <ion-card-title> Alterar </ion-card-title>
+      
+    </ion-card-header>
+
+    <ion-item>
+        <ion-label position="stacked"> Nome: </ion-label>
+        <ion-input [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" size="large" color="yellow" (click)="salvar()"> Salvar </ion-button>
+  </ion-card>
+
+</ion-content>

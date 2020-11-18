@@ -1,0 +1,27 @@
+ion-note {
+
+    ion-icon {
+        font-size: 25px;
+        font-weight: bold;
+        color: #eeae02;
+    }
+
+    ion-icon+ion-icon {
+        margin-left: 20px;
+        color: red;
+    }
+}
+ 
+.blackT {
+    font-weight: bold;
+    color: black;
+}
+
+p + p {
+    color: black;
+    font-size: 18px
+}
+
+strong {
+    color: #032344;
+}

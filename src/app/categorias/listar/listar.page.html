@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-buttons>
+          <ion-back-button color="blue"></ion-back-button>
+        </ion-buttons>
+      </ion-col>
+
+
+        <ion-text class="ion-text-center titleT" color="blue">
+          Categorias
+        </ion-text>
+        
+
+    </ion-row>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngFor="let categoria of listaCategorias">
+    <ion-label>
+      <p class="blackT">
+        <strong> ID: </strong>
+        {{ categoria.id }}
+      </p>
+      <p class="blackT">
+        {{ categoria.nome }}
+      </p>
+    </ion-label>
+    <ion-note slot="end" color="light">
+      <ion-icon name="create-outline" [routerLink]="'/categorias/alterar/' + categoria.id"></ion-icon>
+      <ion-icon name="trash-outline" (click)="presentAlertConfirm(categoria.id)"></ion-icon>
+    </ion-note>
+  </ion-item>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button routerLink="/categorias/cadastrar" color="blue">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+
+</ion-content>

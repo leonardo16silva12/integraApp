@@ -1,20 +1,81 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-avatar class="imgAuto">
+          <img src="assets/lion2.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="light">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button color="yellow" expand="block" fill="outline" routerLink="/categorias/listar">
+          <div>
+            <img src="assets/categorias.svg">
+            <p> Categorias </p>
+          </div>
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="yellow" expand="block" fill="outline">
+          <div>
+            <img src="assets/produtos.svg">
+            <p> Produtos </p>
+          </div>
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button color="yellow" expand="block" fill="outline">
+          <div>
+            <img src="assets/cidades.svg">
+            <p> Cidades </p>
+          </div>
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="yellow" expand="block" fill="outline">
+          <div>
+            <img src="assets/clientes.svg">
+            <p> Clientes </p>
+          </div>
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button color="yellow" expand="block" fill="outline">
+          <div>
+            <img src="assets/pedidos.svg">
+            <p> Pedidos </p>
+          </div>
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
 </ion-content>
